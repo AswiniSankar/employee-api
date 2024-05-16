@@ -40,7 +40,7 @@ def get_employee(employee_id: int):
 def get_all_employee():
 	return employees
 
-@app.get('/get-employee-by-name/')
+@app.get('/get-employee-by-name')
 def get_employee_by_name(name : str):
 	for id in employees:
 		if employees[id]['name'] == name:
